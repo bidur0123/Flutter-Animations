@@ -24,11 +24,12 @@ class WaterDropEffect extends StatelessWidget {
         ),
         elevation: 0,
       ),
-
       body: SafeArea(
         child: Column(
           children: [
-            const Spacer(),
+            const SizedBox(
+              height: 20,
+            ),
             // Custom Neumorphic Container
             Center(
               child: Container(
@@ -138,6 +139,7 @@ class WaterDropEffect extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 10,)
                 ],
               ),
             ),

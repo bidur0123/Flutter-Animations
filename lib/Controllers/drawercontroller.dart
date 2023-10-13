@@ -9,6 +9,7 @@ import 'package:flutter_animations/screens/bounce_animation.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get.dart';
 import '../Screens/mainscreen.dart';
+import 'package:flutter_animations/Screens/radial_hero_animation.dart';
 
 class MyDrawerController extends GetxController {
   final RxInt selectedMenuItem = 0.obs; // Use Rx for reactive programming
@@ -22,10 +23,10 @@ class MyDrawerController extends GetxController {
   final mainScreen3 = AnimatedTextWidget();
   final mainScreen4 = const WaterDropEffect();
   final mainScreen5 = const RipplesAnimation();
-  final mainScreen6 = Bounce();
-
-  final mainScreen7 = ExplicitAnimations();
-   final mainScreen8 = flip();
+  final mainScreen6 = const Bounce();
+  final mainScreen7 = const ExplicitAnimations();
+  final mainScreen8 = flip();
+  final mainScreen9 = RadialExpansionDemo();
 
   // Getter to get the current main screen based on the selectedMenuItem
   Widget get currentMainScreen {
@@ -38,16 +39,16 @@ class MyDrawerController extends GetxController {
         return mainScreen3;
       case 3:
         return mainScreen4;
-       case 4:
+      case 4:
         return mainScreen5;
-       case 5 : 
+      case 5 :
         return  mainScreen6 ;
-
-        case 6 : 
+      case 6 :
         return  mainScreen7 ;  
-
-        case 7 :
+      case 7 :
          return  mainScreen8;
+      case 8 :
+        return  mainScreen9;
       // Add more cases when you are adding new screen
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized

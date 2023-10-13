@@ -20,21 +20,21 @@ class _fade_in_fade_out extends State<fade_in_fade_out> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: mainpagecolor,
-        appBar: AppBar(
+      backgroundColor: mainpagecolor,
+      appBar: AppBar(
         backgroundColor: mainpagecolor,
         title: const Text('Fade in / Fade out demo'),
-    leading: IconButton(
-    icon: const Icon(Icons.menu), // You can use any icon you prefer
-    onPressed:() {
-      MyDrawerController.to.toggleDrawer();
-      MyDrawerController.to.update();
+        leading: IconButton(
+          icon: const Icon(Icons.menu), // You can use any icon you prefer
+          onPressed:() {
+            MyDrawerController.to.toggleDrawer();
+            MyDrawerController.to.update();
 
-    },
-    hoverColor: Colors.white,
-    ),
-    elevation: 0,
+          },
+          hoverColor: Colors.white,
         ),
+        elevation: 0,
+      ),
 
       body: Center(
         child: AnimatedOpacity(
@@ -68,4 +68,3 @@ class _fade_in_fade_out extends State<fade_in_fade_out> {
     );
   }
 }
-
