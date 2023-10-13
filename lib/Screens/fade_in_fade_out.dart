@@ -22,18 +22,18 @@ class _fade_in_fade_out extends State<fade_in_fade_out> {
         backgroundColor: mainpagecolor,
         appBar: AppBar(
         backgroundColor: mainpagecolor,
-        title: Text('Fade in / Fade out demo'),
-    leading: IconButton(
-    icon: Icon(Icons.menu), // You can use any icon you prefer
-    onPressed:() {
-      MyDrawerController.to.toggleDrawer();
-      MyDrawerController.to.update();
+        title: const Text('Fade in / Fade out demo'),
+          leading: IconButton(
+          icon: const Icon(Icons.menu), // You can use any icon you prefer
+          onPressed:() {
+            MyDrawerController.to.toggleDrawer();
+            MyDrawerController.to.update();
 
-    },
-    hoverColor: Colors.white,
-    ),
-    elevation: 0,
-        ),
+          },
+          hoverColor: Colors.white,
+          ),
+          elevation: 0,
+              ),
 
       body: Center(
         child: AnimatedOpacity(
